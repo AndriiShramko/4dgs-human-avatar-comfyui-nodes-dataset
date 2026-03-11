@@ -72,6 +72,12 @@ Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-vo
 
 ---
 
+## Development & Research Documentation
+
+Research and implementation docs (architecture, loss functions, kinematics, deployment, legal strategy, etc.) are in the **[Research-docs](Research-docs/)** folder. Start from [Research-docs/README.md](Research-docs/README.md) for the v6 index. *This documentation was produced with AI assistance and is shared for reference only; it may contain inaccuracies or be outdated.*
+
+---
+
 ## Links
 
 - **Landing page (demo, video, waitlist):** [comfyui-4dgs-volumetric-node.eu](https://comfyui-4dgs-volumetric-node.eu/)
@@ -84,6 +90,7 @@ Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-vo
 ## Repository structure (for later)
 
 ```
+├── Research-docs/       # Development & research documentation (v5, v6)
 ├── comfyui_nodes/       # Shramko-Volumetric-Bridge nodes (when released)
 ├── models/              # Model weights & instructions
 ├── dataset/             # Free & enterprise dataset docs and scripts
@@ -92,3 +99,7 @@ Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-vo
 ```
 
 **Licenses:** Code — [Apache 2.0](LICENSE). Free dataset — [CC BY-NC-4.0](DATASET_LICENSE_FREE.md). Enterprise — [see terms](DATASET_LICENSE_ENTERPRISE.md).
+
+---
+
+Development and research documentation in [Research-docs](Research-docs/) was produced with AI assistance and is shared for reference only; it may contain inaccuracies or be outdated.
