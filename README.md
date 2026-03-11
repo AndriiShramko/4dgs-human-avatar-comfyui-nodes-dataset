@@ -24,7 +24,7 @@
 
 ## There’s nothing to run here yet — and that’s why we need you
 
-This repo will host **ComfyUI nodes** (Shramko-Volumetric-Bridge) and **human scan datasets** for 4D Gaussian Splatting. Right now we’re in the final stretch: the module and data are being prepared. **There is no downloadable build or dataset yet.** If you want to be first in line when we ship, add yourself to the **closed waitlist** on our landing page.
+This repo will host **ComfyUI nodes** (Shramko-Volumetric-Bridge) and **human scan datasets** for 4D Gaussian Splatting. The module and data are being prepared. **There is no downloadable build or dataset yet.** If you want to be first in line when we ship, add yourself to the **closed waitlist** on our landing page.
 
 ---
 
