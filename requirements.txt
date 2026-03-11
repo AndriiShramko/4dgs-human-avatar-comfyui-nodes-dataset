@@ -1,0 +1,8 @@
+# 4DGS Human Avatar — ComfyUI nodes & dataset scripts
+# Install in ComfyUI environment or a venv when using dataset scripts only.
+
+# ComfyUI provides torch; if running nodes standalone (e.g. tests):
+# torch>=2.0.0
+
+# For dataset download script (optional)
+huggingface_hub>=0.20.0
