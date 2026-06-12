@@ -4,7 +4,7 @@
 
 This documentation represents the **6th iteration** of the research and architectural plan for a feed-forward 4D Gaussian Splatting avatar generator. Version 6 is the result of a comprehensive critical audit of all v5 documents, identifying hallucinations, overstatements, and gaps against the actual SOTA 2025-2026 landscape.
 
-> **Fact-check audit (2026-06-12):** Sections 6.1-6.7 were verified claim-by-claim against primary sources (papers, repos, license texts) by a 7-agent team. All cited papers turned out to exist; ~30 factual corrections were applied in place (inline annotations marked ⚠️). All key architectural decisions **survived** verification. Most material corrections: B200 2026 pricing makes the H100 cost argument obsolete (FP8 maturity is now the rationale); the "5-15 dB occluded-region gap" figure was unsourced; MEGA is 161→20 params; Anny's SMPL-X-compat mode is non-commercial only; filtering stages compound to ~84%. Section 6.8 (Flex4DHuman competitor analysis) added.
+> **Fact-check audit (2026-06-12):** Sections 6.1-6.7 were verified claim-by-claim against primary sources (papers, repos, license texts) by a 7-agent team. All cited papers turned out to exist; ~30 factual corrections were applied in place (inline annotations marked ⚠️). All key architectural decisions **survived** verification. Most material corrections: B200 2026 pricing makes the H100 cost argument obsolete (FP8 maturity is now the rationale); the "5-15 dB occluded-region gap" figure was unsourced; MEGA is 161→20 params; Anny's SMPL-X-compat mode is non-commercial only; filtering stages compound to ~84%. Section 6.8 added — analysis of Flex4DHuman as a new research source.
 
 ## What Changed from v5
 
@@ -25,7 +25,7 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.5-hardware-economics.md](6.5-hardware-economics.md) | Hardware Economics | H100+FP8 as MVP path, NVFP4 reality check, cost analysis |
 | [6.6-compression-deploy.md](6.6-compression-deploy.md) | Compression & Deploy | MEGA + P-4DGS hybrid, ComfyUI integration, VRAM budgeting |
 | [6.7-legal-strategy.md](6.7-legal-strategy.md) | Legal Strategy | Anny/MHR as SMPL replacement, gsplat, Clean-Room timeline |
-| [6.8-flex4dhuman-analysis.md](6.8-flex4dhuman-analysis.md) | **Competitor Analysis** | Flex4DHuman (UW + World Labs): pipeline breakdown, license audit, integration strategy, replication plan |
+| [6.8-flex4dhuman-analysis.md](6.8-flex4dhuman-analysis.md) | **New Research Source** | Flex4DHuman (UW + World Labs): pipeline breakdown, license audit, integration strategy, replication plan |
 
 ## Quick Start for Implementation Team
 
