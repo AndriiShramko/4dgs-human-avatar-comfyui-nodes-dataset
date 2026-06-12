@@ -26,6 +26,9 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.6-compression-deploy.md](6.6-compression-deploy.md) | Compression & Deploy | MEGA + P-4DGS hybrid, ComfyUI integration, VRAM budgeting |
 | [6.7-legal-strategy.md](6.7-legal-strategy.md) | Legal Strategy | Anny/MHR as SMPL replacement, gsplat, Clean-Room timeline |
 | [6.8-flex4dhuman-analysis.md](6.8-flex4dhuman-analysis.md) | **New Research Source** | Flex4DHuman (UW + World Labs): pipeline breakdown, license audit, integration strategy, replication plan |
+| [6.9-acceleration-and-cost-reduction.md](6.9-acceleration-and-cost-reduction.md) | **Track A: Acceleration** | Verified 2026 cost/speed optimizations: LoRA-first fine-tune, few-step distillation (FastWan/Self-Forcing), 10-30x faster 4DGS fitting, backbone bake-off — MVP budget ~$62-70K |
+| [6.10-data-strategy.md](6.10-data-strategy.md) | **Data Strategy** | Commercially clean training data at minimum cost: license-verified synthetic stack (CC0/Apache/MIT), 8-12 camera consumer rig, vendor license audit — ~$8-15K total |
+| [6.11-gracia-collaboration-track.md](6.11-gracia-collaboration-track.md) | **Track B: Partner** | Gracia AI collaboration: verified company profile, distillation-from-reconstruction pipeline, IP firewall protecting Track A, deal options, first-call questions |
 
 ## Quick Start for Implementation Team
 
