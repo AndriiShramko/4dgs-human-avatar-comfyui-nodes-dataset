@@ -29,6 +29,7 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.9-acceleration-and-cost-reduction.md](6.9-acceleration-and-cost-reduction.md) | **Track A: Acceleration** | Verified 2026 cost/speed optimizations: LoRA-first fine-tune, few-step distillation (FastWan/Self-Forcing), 10-30x faster 4DGS fitting, backbone bake-off — MVP budget ~$62-70K |
 | [6.10-data-strategy.md](6.10-data-strategy.md) | **Data Strategy** | Commercially clean training data at minimum cost: license-verified synthetic stack (CC0/Apache/MIT), 8-12 camera consumer rig, vendor license audit — ~$8-15K total |
 | [6.11-gracia-collaboration-track.md](6.11-gracia-collaboration-track.md) | **Track B: Partner** | Gracia AI collaboration: verified company profile, distillation-from-reconstruction pipeline, IP firewall protecting Track A, deal options, first-call questions |
+| [6.12-noncommercial-mvp-track.md](6.12-noncommercial-mvp-track.md) | **Track C: NC MVP** | Fast/cheap non-commercial open demo from released NC weights (MV-Performer / Diffuman4D + gsplat), 3-5 weeks ≈$700-1.6K, hard firewall from commercial tracks |
 
 ## Quick Start for Implementation Team
 
