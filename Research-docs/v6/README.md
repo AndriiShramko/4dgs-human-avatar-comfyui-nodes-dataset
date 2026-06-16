@@ -30,6 +30,9 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.10-data-strategy.md](6.10-data-strategy.md) | **Data Strategy** | Commercially clean training data at minimum cost: license-verified synthetic stack (CC0/Apache/MIT), 8-12 camera consumer rig, vendor license audit — ~$8-15K total |
 | [6.11-gracia-collaboration-track.md](6.11-gracia-collaboration-track.md) | **Track B: Partner** | Gracia AI collaboration: verified company profile, distillation-from-reconstruction pipeline, IP firewall protecting Track A, deal options, first-call questions |
 | [6.12-noncommercial-mvp-track.md](6.12-noncommercial-mvp-track.md) | **Track C: NC MVP** | Fast/cheap non-commercial open demo from released NC weights (MV-Performer / Diffuman4D + gsplat), 3-5 weeks ≈$700-1.6K, hard firewall from commercial tracks |
+| [6.13-single-gpu-nc-training-plan.md](6.13-single-gpu-nc-training-plan.md) | **NC Training: Machine-Time** | Train our own NC model on ONE RTX 6000 Pro (96GB): three scenarios (red-team audited). S1 ~1 wk (smoke), S2 ~5-8 wk calendar (recommended), S3 ~2-3.5 mo. ⚠️ DNA-Rendering data gating is a hard day-0 blocker |
+| [6.14-goal-mode-agent-team-plan.md](6.14-goal-mode-agent-team-plan.md) | **Goal-Mode Agent Team** | 6-agent autonomous build plan, milestones M0-M6 with numeric acceptance gates, single-GPU discipline, Obsidian reporting, owner-gates at data licensing + publishing |
+| [6.15-world-tracing-analysis.md](6.15-world-tracing-analysis.md) | **New Research Source** | World Tracing (World Labs+UIUC, arXiv 2606.13652): occlusion-aware per-pixel geometry stacks. License CC BY-NC-ND 4.0 → NC track only; useful as 4DGS-init / back-side prior; does NOT close moving-camera gap |
 
 ## Quick Start for Implementation Team
 
