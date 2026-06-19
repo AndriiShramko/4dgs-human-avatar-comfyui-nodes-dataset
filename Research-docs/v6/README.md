@@ -38,6 +38,7 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.18-frontier-and-camera-frontend.md](6.18-frontier-and-camera-frontend.md) | **2026 Frontier + Camera** | Newest post-Dec-2025 releases (Forge4D, NoPo4D, TrackingWorld); moving-camera front-end: MegaSaM (NC) / VGGT-1B-Commercial (commercial) |
 | [6.19-buildable-mvp-synthesis.md](6.19-buildable-mvp-synthesis.md) | **★ Buildable MVP (synthesis)** | The realizable plan on one RTX 6000 Pro: Layer 0 (zero-training demo this week) → Layer 1 (light fine-tune on obtainable data, §6.13 S2 now UNBLOCKED) → Layer 2 (watch). DNA-Rendering blocker resolved |
 | [6.20-goal-mode-2frontal-build-plan.md](6.20-goal-mode-2frontal-build-plan.md) | **★ Goal-Mode Prompt (2-frontal)** | Copy-paste goal-mode master prompt + detailed capture spec for the 2-frontal-cameras→360° variant (front faithful, back hallucinated). Autonomous agent roles, M0-M6, single-GPU on RTX 6000 Pro |
+| [6.21-2gopro-reality-adapted-plan.md](6.21-2gopro-reality-adapted-plan.md) | **★ 2× GoPro Reality Plan + Prompt** | §6.20 adapted to the owner's real kit: 2× GoPro HERO 13 (Labs QR/GPS sync, NOT flash), ~5 subjects, no green screen, varied locations. Verified sync facts, rigid-rig calibration, no-greenscreen matting, 360° turntable back-GT trick, open-data back-learning, revised goal-mode prompt |
 
 ## Quick Start for Implementation Team
 
