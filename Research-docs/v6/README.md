@@ -37,6 +37,7 @@ This documentation represents the **6th iteration** of the research and architec
 | [6.17-obtainable-data-plan.md](6.17-obtainable-data-plan.md) | **Obtainable Data (no gating)** | Solo-downloadable data replacing DNA-Rendering: CMU Panoptic (open), AIST++ (CC BY), PKU-DyMVHumans (click-through, dense multi-cam) + synthetic. Volume clears the fine-tune floor. ETH-AIT/RenderMe-360 disqualified |
 | [6.18-frontier-and-camera-frontend.md](6.18-frontier-and-camera-frontend.md) | **2026 Frontier + Camera** | Newest post-Dec-2025 releases (Forge4D, NoPo4D, TrackingWorld); moving-camera front-end: MegaSaM (NC) / VGGT-1B-Commercial (commercial) |
 | [6.19-buildable-mvp-synthesis.md](6.19-buildable-mvp-synthesis.md) | **★ Buildable MVP (synthesis)** | The realizable plan on one RTX 6000 Pro: Layer 0 (zero-training demo this week) → Layer 1 (light fine-tune on obtainable data, §6.13 S2 now UNBLOCKED) → Layer 2 (watch). DNA-Rendering blocker resolved |
+| [6.20-goal-mode-2frontal-build-plan.md](6.20-goal-mode-2frontal-build-plan.md) | **★ Goal-Mode Prompt (2-frontal)** | Copy-paste goal-mode master prompt + detailed capture spec for the 2-frontal-cameras→360° variant (front faithful, back hallucinated). Autonomous agent roles, M0-M6, single-GPU on RTX 6000 Pro |
 
 ## Quick Start for Implementation Team
 
