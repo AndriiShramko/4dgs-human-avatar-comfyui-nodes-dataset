@@ -4,7 +4,7 @@
 [![ComfyUI](https://img.shields.io/badge/ComfyUI-Nodes-orange.svg)](https://github.com/comfyanonymous/ComfyUI)
 [![Status](https://img.shields.io/badge/Status-Coming%20soon-00D4FF.svg)](https://comfyui-4dgs-volumetric-node.eu/)
 
-**True 360°. Volumetric video generation without flicker or artifacts.**
+**Faithful volumetric video of real performances — surround coverage from multi-camera capture, engineered for measurable stability.**
 
 ---
 
@@ -30,21 +30,22 @@ This repo will host **ComfyUI nodes** (Shramko-Volumetric-Bridge) and **human sc
 
 ## We’re all tired of noisy, heavy 4DGS and non-commercial licenses
 
-You’ve probably already tried tools like **Apple SHARP**. It’s a cool toy, but not fit for real work: 10–20° parallax, the back of the subject ignored, temporal “boiling” in animations, and **commercial use strictly forbidden**. We need a tool that’s stable, great-looking, and fully legal for commercial work. That’s what we’re building.
+Most of today’s 4D Gaussian Splatting stack is research code under non-commercial licenses, with no stable end-to-end path from a real captured performance to a playable volumetric clip. Feed-forward single-image tools (e.g. Apple SHARP — a genuinely impressive *static* 3DGS generator whose released weights are research-only) solve a different problem: they generate a scene from one photo, they don’t faithfully replay a real performance. We’re building the missing piece: **faithful 4DGS of a real captured performance**, delivered through ComfyUI, on a commercially clean stack.
 
-| Apple SHARP | **Shramko-Human-4D** (ours) |
-|-------------|------------------------------|
-| Limited 10–20° parallax | **Full 360° volumetric view** |
-| Ignores subject’s back | **Accurate back-side reconstruction** |
-| Temporal “boiling” in animations | **Absolute temporal stability** |
-| Commercial use forbidden | **100% legal for commercial use** |
-| ~100 GB per minute of video | **Ultra-optimized — less than 1 GB per minute** |
+**Our target characteristics** (targets, not shipped results — derivations and verification status for every number live in [Research-docs/v7](Research-docs/v7/README.md)):
+
+| Target | Honest fine print |
+|--------|-------------------|
+| Faithful surround view from multi-camera capture | single-camera captures are *front-faithful*; nobody can observe an unseen back — learned back-fill is a separate, clearly-labeled research track |
+| Measurable temporal stability | acceptance metrics (held-out-camera PSNR/LPIPS, flicker checks) are defined in Research-docs/v7 — no “absolute” claims |
+| Commercially clean pipeline | built on Apache-2.0 components (gsplat, Wan 2.1) with a strict license wall; details in [LEGAL-LICENSING](Research-docs/v7/LEGAL-LICENSING.md) |
+| Compact temporal files | published research codecs already reach ≈0.35–0.7 MB/frame (DualGS, NVIDIA QUEEN) — our target is that class of size on a commercially clean codepath |
 
 ---
 
 ## Why the waitlist?
 
-Building this module and processing petabytes of volumetric data is a huge investment. Before the final push, we need to see real interest. **Your signup is a signal** that we’re building what the market actually needs. We also need to know: will you run nodes locally, or do you need a cloud API? Leave your details on the landing page — when we’re ready, you’ll get access first.
+Building this module — and capturing, processing and legally clearing large volumes of volumetric data — is a huge investment (the honest current status of data and code is tracked in [DATASET-STATUS](Research-docs/v7/DATASET-STATUS.md)). Before the final push, we need to see real interest. **Your signup is a signal** that we’re building what the market actually needs. We also need to know: will you run nodes locally, or do you need a cloud API? Leave your details on the landing page — when we’re ready, you’ll get access first.
 
 ---
 
@@ -66,7 +67,7 @@ Your waitlist signup is a vote for this product and a ticket to the front row. E
 
 - **ComfyUI nodes** — Shramko-Volumetric-Bridge: Ingest, Processing, Visualization, Export. 4DGS creation as intuitive as regular video generation.
 - **Free dataset** — Human scan data for **non-commercial** use and research (CC BY-NC-4.0), hosted on Hugging Face.
-- **Enterprise dataset** — Large-scale scans (thousands of subjects, hundreds of TB) for training your own AI models, under a commercial license.
+- **Enterprise dataset** — planned: large-scale, consent-documented human capture for training your own AI models under a commercial license (production gates and scale are defined in [Research-docs/v7/VARIANT-3](Research-docs/v7/VARIANT-3-FLAGSHIP.md); current status: [DATASET-STATUS](Research-docs/v7/DATASET-STATUS.md)).
 
 Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-volumetric-node.eu/#waitlist)** so we can notify you at launch.
 
@@ -74,7 +75,7 @@ Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-vo
 
 ## Development & Research Documentation
 
-Research and implementation docs (architecture, loss functions, kinematics, deployment, legal strategy, etc.) are in the **[Research-docs](Research-docs/)** folder. Start from [Research-docs/README.md](Research-docs/README.md) for the v6 index. *This documentation was produced with AI assistance and is shared for reference only; it may contain inaccuracies or be outdated.*
+Research and implementation docs (architecture, loss functions, kinematics, deployment, legal strategy, etc.) are in the **[Research-docs](Research-docs/)** folder. **Start from [Research-docs/v7](Research-docs/v7/README.md)** — the audited, three-variant plan where every claim carries a verification tag (see its [CLAIMS_REGISTRY](Research-docs/v7/CLAIMS_REGISTRY.md)). v5/v6 remain for provenance and implementation detail. *This documentation was produced with AI assistance; v7 claims are individually verified and tagged, earlier versions may contain inaccuracies.*
 
 ---
 
@@ -90,7 +91,7 @@ Research and implementation docs (architecture, loss functions, kinematics, depl
 ## Repository structure (for later)
 
 ```
-├── Research-docs/       # Development & research documentation (v5, v6)
+├── Research-docs/       # Development & research documentation (v5, v6, v7 — start at v7)
 ├── comfyui_nodes/       # Shramko-Volumetric-Bridge nodes (when released)
 ├── models/              # Model weights & instructions
 ├── dataset/             # Free & enterprise dataset docs and scripts

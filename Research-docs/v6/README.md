@@ -1,3 +1,6 @@
+<!-- v7-audit-notice -->
+> **ℹ️ AUDITED BY V7 (2026-07-12).** This v6 file stays citable for its implementation detail; claim-level verification statuses live in [v7/CLAIMS_REGISTRY](../v7/CLAIMS_REGISTRY.md) and the apex plan is [Research-docs/v7](../v7/README.md). Owner decisions recorded in v6 remain binding.
+
 # 4DGS Avatar Generator — Research Documentation v6
 
 > **Critical Audit & Corrected Architecture for MVP Development**

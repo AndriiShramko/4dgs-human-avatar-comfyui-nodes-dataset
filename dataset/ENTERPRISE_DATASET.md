@@ -1,13 +1,15 @@
-# Enterprise Dataset
+# Enterprise Dataset (planned)
 
-The **Enterprise** tier provides access to large-scale human scan libraries for training and fine-tuning your own AI models in a **commercial** setting.
+> **Status (2026-07-12): this dataset does not exist yet.** Nothing described below is currently available; production is gated behind the plan in [Research-docs/v7/VARIANT-3-FLAGSHIP.md](../Research-docs/v7/VARIANT-3-FLAGSHIP.md), and the honest current state of all data assets is tracked in [Research-docs/v7/DATASET-STATUS.md](../Research-docs/v7/DATASET-STATUS.md). This page describes the intended offering so early conversations can start.
 
-## What you get
+The **Enterprise** tier is planned to provide access to large-scale, consent-documented human capture for training and fine-tuning your own AI models in a **commercial** setting.
 
-- **Volume:** Thousands of high-quality human scans, hundreds of terabytes of data.
+## What it is planned to include
+
+- **Volume:** large-scale multi-view human capture (production scale will be set by demand gates — see VARIANT-3).
 - **Use:** Training and fine-tuning of AI models (including 4DGS and related neural rendering models).
-- **License:** Commercial use permitted under a separate license agreement.
-- **Delivery:** Access via S3-compatible storage or CDN; credentials and endpoints provided after agreement.
+- **License:** Commercial use permitted under a separate license agreement, with documented GDPR consent per subject.
+- **Delivery:** planned via S3-compatible storage or CDN; credentials and endpoints provided after agreement.
 
 ## Who it is for
 

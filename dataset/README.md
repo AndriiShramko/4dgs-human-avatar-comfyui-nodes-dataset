@@ -1,13 +1,15 @@
 # 4DGS Human Scan Datasets
 
-This folder documents and provides access to human scan data used for training and fine-tuning 4DGS avatar models.
+> **Status (2026-07-12): no dataset has been published yet** — both tiers below are planned. Current state of all data assets: [Research-docs/v7/DATASET-STATUS.md](../Research-docs/v7/DATASET-STATUS.md).
 
-## Tiers
+This folder documents the planned human scan data tiers for training and fine-tuning 4DGS models.
+
+## Tiers (planned)
 
 | Tier        | Description                    | License   | Access            |
 |------------|---------------------------------|-----------|-------------------|
 | **Free**   | Subset for research & non-commercial use | [CC BY-NC-4.0](../DATASET_LICENSE_FREE.md) | [FREE_DATASET.md](FREE_DATASET.md) |
-| **Enterprise** | Large-scale scans (1000s of subjects, 100s of TB) for commercial training | Commercial | [ENTERPRISE_DATASET.md](ENTERPRISE_DATASET.md) |
+| **Enterprise** | Large-scale, consent-documented capture for commercial training | Commercial | [ENTERPRISE_DATASET.md](ENTERPRISE_DATASET.md) |
 
 ## Contents
 
