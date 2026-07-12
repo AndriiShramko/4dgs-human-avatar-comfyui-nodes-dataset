@@ -7,7 +7,7 @@
 **It is:** a per-capture optimization ("replay") pipeline — a real captured performance becomes a faithful 4D Gaussian-splat clip, playable in ComfyUI and on the web. No model training, no learned prior. This matches the owner's product definition: faithful 4DGS of REAL video, not avatar-from-photo [registry N-2].
 
 **It is not:** a drivable/riggable avatar, and not a 360° promise from monocular input. Physics of observation, stated honestly [registry N-2, C1-3]:
-- **Multi-camera capture (2–8 cams today, more later): faithful surround coverage** of what the cameras saw.
+- **Multi-camera capture (2 cams today — the owner's actual kit [registry N-5]; more as further rigs are brought into this project): faithful coverage** of what the cameras saw.
 - **Monocular capture: faithful FRONT only.** The unseen back is either absent or visibly hallucinated — this variant does not hallucinate; back-fill belongs to Variant 2's learned prior.
 
 Stability is the acceptance criterion, so replay-not-generative is a design decision, not a budget compromise: per-video optimization has no domain gap and no cherry-picked generalization to fail on.

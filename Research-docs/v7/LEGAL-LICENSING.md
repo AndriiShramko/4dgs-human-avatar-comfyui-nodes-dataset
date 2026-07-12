@@ -2,7 +2,7 @@
 
 > **DRAFT — not legal advice, pending counsel review.** Part of Research-docs v7 (2026-07-12). Licenses change: every entry carries an as-of date; re-check the primary source before relying on it. Deeper analysis inherited from v6/6.7 (whose current text survived audit) and 6.22.
 
-## 1. The license map (all entries verified against primary sources on 2026-07-12)
+## 1. The license map (entries verified against primary sources on 2026-07-12, except rows explicitly tagged inherited)
 
 | Component | License | Commercial track? | Evidence |
 |---|---|---|---|
@@ -15,7 +15,7 @@
 | Inria diff-gaussian-rasterization + forks (STG thirdparty, 4DGaussians submodule, DualGS inherited parts, QUEEN) | non-commercial | ❌ research/reference only | [registry LB2-4, LB2-5, N-12] |
 | Apple SHARP | code: permissive custom; weights: research-only | ❌ weights; code irrelevant to this product | [registry LB2-2b, LB2-2c] |
 | Difix3D+ / ArtiFixer / World Tracing / Sapiens | NVIDIA License / NC checkpoints / CC BY-NC(-ND) | ❌ NC-track experiments only | [registry LB1-8b, N-13] |
-| Academic 4D-human datasets (ActorsHQ, DNA-R, MVHumanNet, THuman, HuMMan, HuGe100K) | all non-commercial or gated | ❌ — and DNA-R/ActorsHQ are owner-banned outright | [registry N-3 \| terms verified per-dataset in the v7 planning pass] |
+| Academic 4D-human datasets (ActorsHQ, DNA-R, MVHumanNet, THuman, HuMMan, HuGe100K) | all non-commercial or gated | ❌ — and DNA-R/ActorsHQ are owner-banned outright | [registry LB2-12a..LB2-12f, N-3] |
 | VolHuMe (2026) | dataset license NOT PUBLISHED | ❓ treat as NC until authors answer | [registry LB2-6] |
 | $0-license synthetic stack (MakeHuman, Poly Haven, Rocketbox, CMU mocap) | CC0 / MIT / commercial-OK | ✅ | [registry N-9 \| spot-check each before first commercial use] |
 | Rumored prices: Inria "~80K EUR", Meshcapade "~150K EUR/yr" | — | order-of-magnitude only | [registry C4-1, C4-2 \| RUMOR — no public primary source; get written quotes] |
@@ -30,7 +30,7 @@
 
 ## 3. ComfyUI nodes and GPL — the business model consequence
 
-Local custom nodes import ComfyUI (GPL-3.0), making them derivative works: **closed-source paid local nodes are not viable**; there is also no paid node marketplace as of 2026-07 [registry LB2-8 \| GPL ecosystem; see comfyanonymous/ComfyUI#3362 discussion]. Weights, datasets and remote APIs are NOT code derivatives — GPL does not reach them. Therefore:
+Local custom nodes import ComfyUI (GPL-3.0 [registry LB2-14]), making them derivative works: **closed-source paid local nodes are not viable**; a paid node marketplace was not found as of 2026-07 [registry LB2-14]. Weights, datasets and remote APIs are NOT code derivatives — GPL does not reach them. Therefore:
 
 - Nodes = GPL-3.0, free, the distribution funnel (and the niche is currently empty [registry LB2-7]).
 - Monetization = dataset licensing, model weights, hosted API. Heavy proprietary logic can live behind a remote API outside GPL scope.

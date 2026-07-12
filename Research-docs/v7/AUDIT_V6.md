@@ -36,7 +36,7 @@ The v7 planning pass suspected v6 of citing phantom papers. **Web verification r
 
 ## 5. Standing corrections that must not regress
 
-- Never cite "~100 GB/min" as an Apple SHARP figure [registry LB2-2d]. Real compression baselines: QUEEN ≈0.7 MB/frame and DualGS ≈350 KB/frame — both non-commercial code paths [registry LB2-4, LB2-5], usable as *benchmarks*, not as components.
+- Never cite "~100 GB/min" as an Apple SHARP figure [registry LB2-2d]. Real compression baselines: QUEEN ≈0.7 MB/frame and DualGS ≈350 KB/frame [registry LB2-13a, LB2-13b] — both non-commercial code paths [registry LB2-4, LB2-5], usable as *benchmarks*, not as components.
 - Never present the 90-camera rig, enterprise dataset volumes, or "petabytes" as existing (C1-1..C1-3).
 - Never argue FP8 for this workload via KV-cache/LLM numbers (C3-3).
 - Keep prices "80K EUR" / "150K EUR/yr" tagged as rumors until a written quote exists (C4-1, C4-2).

@@ -4,7 +4,7 @@
 
 ## Why v7 exists
 
-v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (74 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
+v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (84 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
 
 ## Methodology and trust levels <!-- lint-skip -->
 

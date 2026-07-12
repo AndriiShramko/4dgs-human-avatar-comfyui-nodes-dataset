@@ -12,7 +12,7 @@ No gate → no Variant 3. Money spent here without gates is the "failed campaign
 
 ## 2. What gets built
 
-- **The dataset (primary asset).** Owner-captured multi-view human performance data with full releases. All verified academic 4D-human datasets are non-commercial (ActorsHQ CC BY-NC, DNA-Rendering agreement-gated, MVHumanNet non-commercial ToU, THuman "non-commercial research purposes only", HuMMan S-Lab NC) [registry N-3 \| verified in the v7 planning pass across each dataset's terms], and the newest entrant VolHuMe has no published dataset license at all [registry LB2-6]. A commercially clean alternative with documented consent is the differentiator — it is also the only deliverable here that does not depreciate as models improve.
+- **The dataset (primary asset).** Owner-captured multi-view human performance data with full releases. All verified academic 4D-human datasets are non-commercial (ActorsHQ CC BY-NC, DNA-Rendering agreement-gated, MVHumanNet non-commercial ToU, THuman "non-commercial research purposes only", HuMMan S-Lab NC) [registry LB2-12a..LB2-12f], and the newest entrant VolHuMe has no published dataset license at all [registry LB2-6]. A commercially clean alternative with documented consent is the differentiator — it is also the only deliverable here that does not depreciate as models improve.
 - **The model (demonstrator).** The best Variant-2 recipe re-trained at scale on the dataset; expected shelf life 12–18 months [estimate | typical generative-model generation cadence 2024-2026], after which the dataset trains its successor.
 - **The distribution (funnel).** ComfyUI nodes (GPL, free — see LEGAL-LICENSING.md §3) + web viewer demos; monetization sits in the dataset, weights and API, never in the nodes.
 
@@ -26,7 +26,7 @@ No gate → no Variant 3. Money spent here without gates is the "failed campaign
 | Model training at scale | $30–60K | [registry N-8 \| 6.24 "good-quality" scenario] |
 | ML engineer (contract, 6–12 mo) | €60–120K | [estimate \| EU contract rates; mandatory — the owner is a capture expert, not an ML researcher, and 6.13's solo plan covers fine-tune replication, not novel-scale training] |
 | Legal (GDPR package, EULA, counsel) | €3–8K | [estimate \| includes recall-mechanism design and dataset EULA review] |
-| **Total** | **≈ €130–330K, 9–15 months** | [estimate \| sum of the above; the legacy "$121K" was a from-scratch training figure with different perimeter — do not mix, per registry C3-6] |
+| **Total** | **≈ €130–360K, 9–15 months** | [estimate \| sum of the above; the legacy "$121K" was a from-scratch training figure with different perimeter — do not mix, per registry C3-6] |
 
 Non-commercial Variant 3 is pointless (burning six figures with no right to sell); the only NC scenario is a research grant producing a citation-magnet CC BY-NC dataset [hypothesis | viable only with an academic partner carrying the grant].
 

@@ -80,7 +80,16 @@ def check_url(url, cache={}):
     except urllib.error.HTTPError as e:
         status = e.code
     except Exception:
-        status = -1
+        # urllib can choke on TLS/HTTP2 quirks that real browsers accept — fall back to curl
+        import subprocess
+        try:
+            out = subprocess.run(
+                ["curl", "-s", "-o", "NUL" if sys.platform == "win32" else "/dev/null",
+                 "-w", "%{http_code}", "-L", "--max-time", "20", "-A", "Mozilla/5.0", url],
+                capture_output=True, text=True, timeout=30)
+            status = int(out.stdout.strip() or -1)
+        except Exception:
+            status = -1
     if status == -1 or status in (404, 410):
         verdict = "FAIL"
     elif status >= 400:
