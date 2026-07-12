@@ -1,10 +1,16 @@
 # Development & Research Documentation
 
-This folder contains **research and implementation documentation** for the 4DGS avatar generator project: architecture, loss functions, sparse-view generation, kinematics, data preprocessing, hardware economics, compression, and legal strategy.
+This folder contains **research and implementation documentation** for the Shramko-Human-4D project (faithful 4DGS of real human performance): architecture, loss functions, sparse-view generation, kinematics, data preprocessing, hardware economics, compression, and legal strategy.
 
-## Current version: v6
+## Current version: v7
 
-**Start here:** [v6/README.md](v6/README.md) — index and quick start for the implementation team.
+**Start here:** [v7/README.md](v7/README.md) — the audited, three-variant implementation plan. Every claim in v7 carries a verification tag; verdicts on v5/v6 claims live in [v7/CLAIMS_REGISTRY.md](v7/CLAIMS_REGISTRY.md), the audit narrative in [v7/AUDIT_V6.md](v7/AUDIT_V6.md).
+
+v6 remains authoritative for the implementation detail it pioneered (notably the canonical execution prompt 6.21 §21.9 and agent-team mechanics 6.14); its index below. v5 is archived provenance.
+
+## v6 index (audited by v7)
+
+**v6 entry point:** [v6/README.md](v6/README.md) — full 25-section index.
 
 | Section | Document | Description |
 |--------|----------|-------------|
@@ -19,4 +25,4 @@ This folder contains **research and implementation documentation** for the 4DGS 
 
 ## Disclaimer
 
-This documentation was produced with AI assistance and is shared for reference. It may contain inaccuracies or be outdated. Use it as a starting point and validate against primary sources and current code.
+This documentation was produced with AI assistance and is shared for reference. v7 claims are individually verified against primary sources and tagged (see v7/CLAIMS_REGISTRY.md); earlier versions may contain inaccuracies or be outdated. Use them as a starting point and validate against primary sources and current code.
