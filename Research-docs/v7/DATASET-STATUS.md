@@ -1,6 +1,6 @@
 # DATASET-STATUS — the honest state of data, rigs and code
 
-> **DRAFT — not legal advice; factual status snapshot as-of 2026-07-12.** Part of Research-docs v7. This file exists because the repository's facade docs described aspirations in the present tense [registry C1-1, C1-2, C1-3]. This is the single source of truth on what exists; update it whenever reality changes.
+> **DRAFT — not legal advice; factual status snapshot as-of 2026-07-27.** Part of Research-docs v7. This file exists because the repository's facade docs described aspirations in the present tense [registry C1-1, C1-2, C1-3]. This is the single source of truth on what exists; update it whenever reality changes.
 
 ## 1. What exists today
 

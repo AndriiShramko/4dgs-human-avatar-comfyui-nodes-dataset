@@ -1,6 +1,6 @@
 # VARIANT 2 — The money→quality curve: does paying for training buy a better result?
 
-> Part of Research-docs v7 (2026-07-12). Purpose: answer ONE question with controlled experiments — *does each additional dollar of fine-tuning measurably improve faithful-4DGS quality (above all: back-side fill and multi-view consistency), and where does the curve flatten?* Execution detail lives in 6.21 §21.9 (the canonical v3 prompt) and 6.14 (agent-team mechanics); budgets reconcile with 6.24. This document is the decision layer on top of them.
+> Part of Research-docs v7 (2026-07-27). Purpose: answer ONE question with controlled experiments — *does each additional dollar of fine-tuning measurably improve faithful-4DGS quality (above all: back-side fill and multi-view consistency), and where does the curve flatten?* Execution detail lives in 6.21 §21.9 (the canonical v3 prompt) and 6.14 (agent-team mechanics); budgets reconcile with 6.24. This document is the decision layer on top of them.
 
 ## 0. The pivot recorded
 
@@ -48,6 +48,10 @@ Re-run the best curve point using **only** owner-captured data (2× GoPro sessio
 | Output usable in product | NO — knowledge only, firewalled | YES — this is the asset |
 | Body prior if needed | MHR Apache-2.0; Anny native mode Apache-2.0 (its smplx-mode is NC) [registry C4-5, C4-6] — SMPL-X itself stays out of commercial builds [registry LB2-1] | same |
 | Cost for the same curve point | ~2-3× cheaper (no capture, no legal) | full price, but produces something you own |
+
+## 3a. Synthetic data from hosted video generators — blocked, not merely risky
+
+Before anyone proposes padding the training mix with frames from a hosted generator: the terms of the current flagship (FLUX 3) forbid using outputs to train competing models and take a perpetual, sublicensable licence over the *inputs* we would upload, training rights included [registry F-15, F-17]. That removes both the output path (training data) and the input path (our capture footage) at once, before quality is even discussed. The permitted synthetic route stays the $0-licence stack of §2 (CC0/MIT assets rendered by us) [registry N-9]. Full analysis: [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md).
 
 ## 4. Kill criteria and honesty rails
 
