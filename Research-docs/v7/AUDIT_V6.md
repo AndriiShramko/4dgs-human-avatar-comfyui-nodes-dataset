@@ -1,6 +1,6 @@
 # AUDIT_V6 — what v5/v6 got wrong, what they got right, and what v7 does about it
 
-> Status: part of Research-docs **v7** (2026-07-12). Every verdict referenced here is backed by a row in [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) with a primary-source URL, an as-of date and a verbatim quote. v6's own verdicts were treated as hypotheses, not evidence, and re-proven in both directions.
+> Status: part of Research-docs **v7** (2026-07-27). Every verdict referenced here is backed by a row in [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) with a primary-source URL, an as-of date and a verbatim quote. v6's own verdicts were treated as hypotheses, not evidence, and re-proven in both directions.
 
 ## 1. The headline result: the failure is not where we expected
 

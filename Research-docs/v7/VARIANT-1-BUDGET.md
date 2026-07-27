@@ -1,6 +1,6 @@
 # VARIANT 1 — Budget track (≤ €1000): maximally stable 4DGS replay
 
-> Part of Research-docs v7 (2026-07-12). Inherits and supersedes the *planning* role of 6.16 (zero-training MVP) and 6.19 Layer 0; those files stay authoritative for tool-level detail. Commercial cleanliness is NOT required on this track (owner's framing), but a clean sub-path is defined so nothing produced here poisons the commercial tracks.
+> Part of Research-docs v7 (2026-07-27). Inherits and supersedes the *planning* role of 6.16 (zero-training MVP) and 6.19 Layer 0; those files stay authoritative for tool-level detail. Commercial cleanliness is NOT required on this track (owner's framing), but a clean sub-path is defined so nothing produced here poisons the commercial tracks.
 
 ## 1. What this variant is — and is deliberately not
 
@@ -29,7 +29,7 @@ ComfyUI v0.23.0 ships a *static* `GAUSSIAN` type; nothing temporal exists in the
 - **(a) GAUSSIAN-sequence (chosen default):** a `GAUSSIAN_SEQUENCE` list-of-frames type + `Load4DGS` / `ExtractFrame → GAUSSIAN` / `Play4DGS` / `Export PLY-seq` nodes. Pros: zero coupling to core internals, every existing GAUSSIAN node works on any extracted frame, survives ComfyUI churn. Cons: memory-naive (per-frame copies) — acceptable at replay scale [estimate \| 5-30s clips × 0.1-2M splats, per C1-5 avatar counts].
 - **(b) Native temporal type PR into core:** higher payoff, higher coupling; revisit only after (a) ships and if Comfy core signals temporal interest.
 
-Decision (a) is recorded here as the v7 default; the node package stays a thin adapter over a standalone library so a future core temporal type is a migration, not a rewrite.
+Generative "extra angles" stay OUT of this path: general video generators carry no shared 3D state and no camera conditioning, so their frames cannot be treated as cameras (see [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) and v6/6.16 Path B). Decision (a) is recorded here as the v7 default; the node package stays a thin adapter over a standalone library so a future core temporal type is a migration, not a rewrite.
 
 ## 4. Budget (target ≤ €1000 total)
 

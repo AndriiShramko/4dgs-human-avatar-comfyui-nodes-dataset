@@ -1,6 +1,6 @@
 # MVP-0 — the first experiments (cheap, decisive, none run yet)
 
-> Part of Research-docs v7 (2026-07-12). v6 accumulated four cheap experiments that were designed but never executed [registry N-6, N-13]. They are the correct first moves because each one either kills or funds a much larger spend. Order matters; total cost of the whole page ≈ €0–200 [estimate | electricity + hours on the free RTX 6000 Pro; zero cloud required].
+> Part of Research-docs v7 (2026-07-27). v6 accumulated four cheap experiments that were designed but never executed [registry N-6, N-13]. They are the correct first moves because each one either kills or funds a much larger spend. Order matters; total cost of the whole page ≈ €0–200 [estimate | electricity + hours on the free RTX 6000 Pro; zero cloud required].
 
 ## E-01 — Layer-0 end-to-end replay (funds/kills Variant 1)
 

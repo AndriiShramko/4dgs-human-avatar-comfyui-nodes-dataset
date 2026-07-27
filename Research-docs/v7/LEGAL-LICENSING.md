@@ -1,8 +1,8 @@
 # LEGAL-LICENSING — the license map and the wall between tracks
 
-> **DRAFT — not legal advice, pending counsel review.** Part of Research-docs v7 (2026-07-12). Licenses change: every entry carries an as-of date; re-check the primary source before relying on it. Deeper analysis inherited from v6/6.7 (whose current text survived audit) and 6.22.
+> **DRAFT — not legal advice, pending counsel review.** Part of Research-docs v7 (2026-07-27). Licenses change: every entry carries an as-of date; re-check the primary source before relying on it. Deeper analysis inherited from v6/6.7 (whose current text survived audit) and 6.22.
 
-## 1. The license map (entries verified against primary sources on 2026-07-12, except rows explicitly tagged inherited)
+## 1. The license map (entries verified against primary sources on 2026-07-27, except rows explicitly tagged inherited)
 
 | Component | License | Commercial track? | Evidence |
 |---|---|---|---|

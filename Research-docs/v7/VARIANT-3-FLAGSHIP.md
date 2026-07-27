@@ -1,6 +1,6 @@
 # VARIANT 3 — Flagship: large-budget training on our own captured data
 
-> Part of Research-docs v7 (2026-07-12). This variant does NOT start until three gates are green. It converts the owner's real advantage — capture expertise and rigs — into the one asset this market lacks: a commercially clean, GDPR-documented multi-view human 4D dataset [registry N-1, LB2-6], with a fine-tuned model and ComfyUI distribution on top.
+> Part of Research-docs v7 (2026-07-27). This variant does NOT start until three gates are green. It converts the owner's real advantage — capture expertise and rigs — into the one asset this market lacks: a commercially clean, GDPR-documented multi-view human 4D dataset [registry N-1, LB2-6], with a fine-tuned model and ComfyUI distribution on top.
 
 ## 1. The three gates (all mandatory, in any order)
 

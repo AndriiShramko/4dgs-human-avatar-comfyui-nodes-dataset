@@ -1,6 +1,6 @@
 # Research-docs v7 — the audited, three-variant implementation plan
 
-**Date: 2026-07-12.** v7 is the apex planning document set for Shramko-Human-4D (faithful 4DGS of real human performance → ComfyUI nodes + a commercially clean dataset). It supersedes the *planning* role of v5 entirely and of v6's overlapping plan files (6.19/6.20/6.24 summaries), while v6 remains authoritative for implementation detail it pioneered — above all the canonical execution prompt 6.21 §21.9 and the agent-team mechanics 6.14 [registry N-6].
+**Date: 2026-07-27.** v7 is the apex planning document set for Shramko-Human-4D (faithful 4DGS of real human performance → ComfyUI nodes + a commercially clean dataset). It supersedes the *planning* role of v5 entirely and of v6's overlapping plan files (6.19/6.20/6.24 summaries), while v6 remains authoritative for implementation detail it pioneered — above all the canonical execution prompt 6.21 §21.9 and the agent-team mechanics 6.14 [registry N-6].
 
 ## Why v7 exists
 
@@ -23,7 +23,7 @@ Every factual claim in v7 carries a status tag — `[verified]` (primary source 
 | Non-commercial track | default sub-path, fastest | 2a is it | pointless except as a grant project [registry N-1] |
 | Starts | now | after Variant-1 acceptance + M0.5 pre-gate | only when all 3 gates green |
 
-Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the five cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page).
+Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the five cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page) · [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) (2026-07-27 assessment: why the FLUX 3 "split view" is a prompt, not a feature, and where a general video generator may and may not touch this pipeline).
 
 ## Sequencing
 
