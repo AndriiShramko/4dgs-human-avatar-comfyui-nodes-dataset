@@ -4,7 +4,7 @@
 
 ## Why v7 exists
 
-v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (84 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
+v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (96 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
 
 ## Methodology and trust levels <!-- lint-skip -->
 
@@ -23,7 +23,7 @@ Every factual claim in v7 carries a status tag — `[verified]` (primary source 
 | Non-commercial track | default sub-path, fastest | 2a is it | pointless except as a grant project [registry N-1] |
 | Starts | now | after Variant-1 acceptance + M0.5 pre-gate | only when all 3 gates green |
 
-Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the five cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page) · [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) (2026-07-27 assessment: why the FLUX 3 "split view" is a prompt, not a feature, and where a general video generator may and may not touch this pipeline).
+Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the five cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page) · [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) (2026-07-27 assessment: why the FLUX 3 "split view" is a prompt, not a feature, and where a general video generator may and may not touch this pipeline) · [LIFT4D-ASSESSMENT.md](LIFT4D-ASSESSMENT.md) (2026-07-30 assessment: CMU's monocular-video → deformable-3DGS test-time optimizer — genuinely 4DGS, no weights of its own to fine-tune, useful as an MVP-0 monocular baseline and Variant-1 recipe donor, blocked from commerce by a missing license + NC prior + Inria rasterizer).
 
 ## Sequencing
 
