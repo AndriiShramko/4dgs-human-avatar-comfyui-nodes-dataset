@@ -23,6 +23,12 @@ v6 remains authoritative for the implementation detail it pioneered (notably the
 | Compression & deploy | [6.6-compression-deploy.md](v6/6.6-compression-deploy.md) | MEGA, P-4DGS, ComfyUI |
 | Legal strategy | [6.7-legal-strategy.md](v6/6.7-legal-strategy.md) | Anny/MHR, gsplat, Clean-Room |
 
+## Intake (raw material awaiting a research pass)
+
+| Date | Document | What it is |
+|---|---|---|
+| 2026-08-14 | [intake/2026-08-14-gush3r.md](intake/2026-08-14-gush3r.md) | GUSH3R (U. Tokyo, arXiv:2607.05243) — feed-forward monocular human+scene → 3DGS. Code preserved in `third_party/GUSH3R/`; license unclear (empty LICENSE + CC BY-NC components) → research-only. |
+
 ## Disclaimer
 
 This documentation was produced with AI assistance and is shared for reference. v7 claims are individually verified against primary sources and tagged (see v7/CLAIMS_REGISTRY.md); earlier versions may contain inaccuracies or be outdated. Use them as a starting point and validate against primary sources and current code.

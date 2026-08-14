@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+conda/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+*.a
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+.cache/
+tmp/
+
+# Model checkpoints and licensed/large assets
+checkpoints/
+src/models/
+
+# Runtime outputs and local examples
+outputs/
+examples/*.mp4
+examples/*.mov
+examples/*.avi
+examples/*.mkv
+
+# Gaussian rasterizer local checkout/build products
+# Install it from GitHub instead of committing the vendored source.
+diff-gaussian-rasterization/
+
+# Editor/project metadata
+.vscode/
+.idea/
+
+# Local/legacy cache paths
+src/models.bak/
+/dust3r/
