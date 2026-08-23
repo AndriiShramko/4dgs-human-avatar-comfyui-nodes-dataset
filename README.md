@@ -75,7 +75,7 @@ Until then, **star this repo** and **[join the waitlist](https://comfyui-4dgs-vo
 
 ## Development & Research Documentation
 
-Research and implementation docs (architecture, loss functions, kinematics, deployment, legal strategy, etc.) are in the **[Research-docs](Research-docs/)** folder. **Start from [Research-docs/v7](Research-docs/v7/README.md)** — the audited, three-variant plan where every claim carries a verification tag (see its [CLAIMS_REGISTRY](Research-docs/v7/CLAIMS_REGISTRY.md)). v5/v6 remain for provenance and implementation detail. *This documentation was produced with AI assistance; v7 claims are individually verified and tagged, earlier versions may contain inaccuracies.*
+Research and implementation docs (architecture, loss functions, kinematics, deployment, legal strategy, etc.) are in the **[Research-docs](Research-docs/)** folder. **Start from [Research-docs/v7](Research-docs/v7/README.md)** — the audited, three-variant plan where every claim carries a verification tag (see its [CLAIMS_REGISTRY](Research-docs/v7/CLAIMS_REGISTRY.md)). Latest assessment: [4DAnyone](Research-docs/v7/4DANYONE-ASSESSMENT.md) — Ant Research's open-source monocular-video→multi-view→4DGS human pipeline (Apache-2.0 code and generator on the Wan family), what it changes for our fine-tune track and learned back-fill, and why its bundled motion front end stays behind the non-commercial license wall. v5/v6 remain for provenance and implementation detail. *This documentation was produced with AI assistance; v7 claims are individually verified and tagged, earlier versions may contain inaccuracies.*
 
 ---
 
