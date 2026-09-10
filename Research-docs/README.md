@@ -6,6 +6,8 @@ This folder contains **research and implementation documentation** for the Shram
 
 **Start here:** [v7/README.md](v7/README.md) — the audited, three-variant implementation plan. Every claim in v7 carries a verification tag; verdicts on v5/v6 claims live in [v7/CLAIMS_REGISTRY.md](v7/CLAIMS_REGISTRY.md), the audit narrative in [v7/AUDIT_V6.md](v7/AUDIT_V6.md).
 
+**Latest research pass: 2026-09-10** — [v7/MARIGOLD-V2-DENSE-PRIORS.md](v7/MARIGOLD-V2-DENSE-PRIORS.md): Marigold V2 (ACM TOG / SIGGRAPH Asia 2026) assessed as a component candidate for the depth/normal prior term. Verdicts in [v7/CLAIMS_REGISTRY.md](v7/CLAIMS_REGISTRY.md) section MG; the deciding experiment is E-06 in [v7/MVP-0-EXPERIMENT.md](v7/MVP-0-EXPERIMENT.md).
+
 v6 remains authoritative for the implementation detail it pioneered (notably the canonical execution prompt 6.21 §21.9 and agent-team mechanics 6.14); its index below. v5 is archived provenance.
 
 ## v6 index (audited by v7)
