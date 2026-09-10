@@ -29,6 +29,16 @@ The strongest zero-training multiview candidate has NO license file [registry N-
 
 The HF tag says `c-uda`, the site implies click-through research terms [registry N-14]. Resolve in writing before any 2a fine-tune ingests it — this is the datum that decides whether 2a's main course exists or the mix falls back to Panoptic+HUMBI+scans.
 
+## E-06 — Marigold V2 temporal-stability probe (half a day, funds/kills the dense-prior component)
+
+New in the 2026-09-10 pass — see [MARIGOLD-V2-DENSE-PRIORS.md](MARIGOLD-V2-DENSE-PRIORS.md). Marigold V2 is the first depth/normal prior whose code, weights and base model all verify as Apache-2.0 [registry MG-2, MG-3, MG-4], which makes it the leading candidate for the depth/normal term the fit loss already assumes [internal | Research-docs/v6/6.1-loss-functions.md]. It is single-image and nothing published discusses video [registry MG-11], so temporal behaviour decides everything.
+
+Run `scripts/infer.py --modality depth` and `--modality normals` over ~100 consecutive frames of one GoPro take (both cameras), at 1024² on the RTX 6000 Pro [registry MG-6].
+- **Measures:** (1) per-frame wall-clock and VRAM peak — no runtime figure is published anywhere [registry MG-16]; (2) **flicker**: after solving per-frame scale+shift against a common reference [registry MG-6], frame-to-frame depth delta measured on *static background* pixels, where true depth is constant, with a fixed seed and again with varying seeds [registry MG-12]; (3) eyes-on hair/silhouette quality on the subject versus the current prep stack [registry MG-14].
+- **Gate:** if aligned frame-to-frame noise on static pixels is smaller than the geometry error the 4D fit is trying to correct → adopt as an auxiliary prior in Variant 1 and size the temporal wrapper node. If it is larger → either temporal smoothing earns its own experiment, or the component is dropped and the fit stays prior-free. Either way the licence finding stands and gets recorded.
+- **Cost:** hours, zero spend [estimate | inference only on the free card; no training, no cloud].
+- **Do not** let this experiment grow into a fine-tune. The own-data fine-tune idea is a hypothesis parked in MARIGOLD-V2-DENSE-PRIORS §7 and stays parked until E-01 has produced real captures.
+
 ## Reporting rule
 
 Each experiment ends with a one-page result note added to v7 (tagged claims, linter-clean) and a row update in DATASET-STATUS.md §1. No result note → the experiment did not happen — this page is the antidote to the repo's historical pattern of plans quietly becoming "facts".
