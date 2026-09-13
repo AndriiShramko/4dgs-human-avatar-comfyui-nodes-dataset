@@ -29,6 +29,15 @@ The strongest zero-training multiview candidate has NO license file [registry N-
 
 The HF tag says `c-uda`, the site implies click-through research terms [registry N-14]. Resolve in writing before any 2a fine-tune ingests it — this is the datum that decides whether 2a's main course exists or the mix falls back to Panoptic+HUMBI+scans.
 
+## E-06 — Point4D on our own footage (half a day, NC-track)
+
+Run the released `scripts/demo.py` over one real take — a performer who turns, crosses their arms and leaves frame — at the paper's chunking (48-frame chunks, 8-frame overlap) and at the repo default (64/16). Full analysis and licence verdict: [POINT4D-ASSESSMENT.md](POINT4D-ASSESSMENT.md) [registry P4D-1..P4D-17].
+- **Measures:** do a grid of queries survive a full take; VRAM and wall-clock per chunk on the RTX 6000 Pro at 294x518 input [registry P4D-1]; whether tracks visibly drift where the subject self-occludes; whether depth behaves with a human filling the frame.
+- **Licence rail:** the checkpoint is non-commercial-derived with no licence of its own [registry P4D-8, P4D-9, P4D-11] — NC-track experiment only; nothing it produces crosses the wall [registry N-12].
+- **Gate:** tracks survive a full take → Point4D becomes a candidate motion front-end for the Layer-0 4D fit (ASSESSMENT §3.1) and the instrument for turning VARIANT-1 §5.3's eyes-on flicker gate into a number (ASSESSMENT §3.3). Tracks break on our footage → drop it; the cost was hours.
+- **Do not** build a ComfyUI node, and do not price a clean retrain [registry P4D-12], before this gate is green.
+- **Async, free, do now:** email the authors asking for a licence on the HF weights, same move as E-04 [registry N-10].
+
 ## Reporting rule
 
 Each experiment ends with a one-page result note added to v7 (tagged claims, linter-clean) and a row update in DATASET-STATUS.md §1. No result note → the experiment did not happen — this page is the antidote to the repo's historical pattern of plans quietly becoming "facts".

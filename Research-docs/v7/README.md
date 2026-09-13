@@ -4,12 +4,12 @@
 
 ## Why v7 exists
 
-v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (84 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
+v5/v6 were written by AI agents; the owner suspected hallucinations. v7 re-verified every load-bearing claim against primary sources — in BOTH directions: suspected phantom papers turned out to exist, while several "facts" (a fabricated Apple SHARP figure, present-tense descriptions of an unbuilt rig and a non-existent dataset, rumor prices) failed verification. Full verdicts: [CLAIMS_REGISTRY.md](CLAIMS_REGISTRY.md) (124 claims, each with URL + as-of date + verbatim quote or an honest not-found). Narrative: [AUDIT_V6.md](AUDIT_V6.md).
 
 ## Methodology and trust levels <!-- lint-skip -->
 
 Every factual claim in v7 carries a status tag — `[verified]` (primary source + quote + date), `[estimate]` (derivation shown), `[hypothesis]` (needs an experiment), `[not-found-as-of]` (searched, not found — NOT a claim of non-existence), `[inherited-unverified]`, `[rumor]`, `[internal]`, `[registry ID]` (cross-reference). <!-- lint-skip -->
-`tools/claims_linter.py` enforces the tags and checks URL liveness; it must exit 0 for every v7 change. Owner decisions recorded in v6 are binding constraints [registry N-1..N-5]: faithful 4DGS of real video (not avatar-from-photo), own-rig data only for commerce, DNA-Rendering/ActorsHQ never, solo-realizable on one RTX 6000 Pro, actual kit = 2× GoPro HERO 13.
+`tools/claims_linter.py` enforces the tags and checks URL liveness; it must exit 0 for every v7 change. Fixed 2026-09-13: a URL that returned no HTTP status at all (curl "000" — DNS failure, timeout, or a blocking egress proxy) used to be reported OK, a false green in the gate built to stop exactly that; it is now UNREACHABLE=FAIL, with `--allow-unreachable` to downgrade it to a listed warning when running from behind a restrictive proxy. Owner decisions recorded in v6 are binding constraints [registry N-1..N-5]: faithful 4DGS of real video (not avatar-from-photo), own-rig data only for commerce, DNA-Rendering/ActorsHQ never, solo-realizable on one RTX 6000 Pro, actual kit = 2× GoPro HERO 13.
 
 ## The three variants
 
@@ -23,7 +23,7 @@ Every factual claim in v7 carries a status tag — `[verified]` (primary source 
 | Non-commercial track | default sub-path, fastest | 2a is it | pointless except as a grant project [registry N-1] |
 | Starts | now | after Variant-1 acceptance + M0.5 pre-gate | only when all 3 gates green |
 
-Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the five cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page) · [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) (2026-07-27 assessment: why the FLUX 3 "split view" is a prompt, not a feature, and where a general video generator may and may not touch this pipeline).
+Cross-cutting docs: [LEGAL-LICENSING.md](LEGAL-LICENSING.md) (license map, the wall, GPL business model, GDPR package — DRAFT, not legal advice) · [DATASET-STATUS.md](DATASET-STATUS.md) (what actually exists: currently zero data, placeholder nodes) · [MVP-0-EXPERIMENT.md](MVP-0-EXPERIMENT.md) (the six cheap experiments that come before any real spend) · [LANDING-SYNC.md](LANDING-SYNC.md) (work order for the contradicting landing page) · [FLUX3-SPLIT-VIEW.md](FLUX3-SPLIT-VIEW.md) (2026-07-27 assessment: why the FLUX 3 "split view" is a prompt, not a feature, and where a general video generator may and may not touch this pipeline) · [POINT4D-ASSESSMENT.md](POINT4D-ASSESSMENT.md) (2026-09-13 assessment: Point4D, the first feed-forward 4D tracker validated at real take length — MIT code, unlicensed NC-derived weights, and the three pipeline stages it may and may not touch).
 
 ## Sequencing
 
