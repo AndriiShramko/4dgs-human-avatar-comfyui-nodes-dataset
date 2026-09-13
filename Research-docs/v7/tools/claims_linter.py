@@ -14,6 +14,12 @@ Rules enforced on every .md file in Research-docs/v7/ (excluding tools/):
   R2. Every [verified ...] tag must contain an http(s) URL and an as-of date.
   R3. Every http(s) URL in v7 docs must be alive (HTTP < 400; 403/405/429 = WARN, not FAIL;
       DNS failure / timeout / 404 / 410 = FAIL). Checked once per unique URL.
+      A URL that produced no HTTP status at all (curl "000": DNS failure, timeout, or a
+      restrictive egress proxy) is UNREACHABLE = FAIL. Until 2026-09-13 this case was read
+      as status 0 and silently reported OK — a false green in the gate that exists to stop
+      exactly that. Behind a proxy that blocks arxiv.org/huggingface.co, pass
+      --allow-unreachable to downgrade UNREACHABLE to WARN; the URLs are then listed as
+      unverified-from-this-host rather than quietly passed.
 Exit code: 0 = all rules pass, 1 = violations found.
 """
 import re
@@ -70,7 +76,7 @@ def claim_lines(text):
             yield i, line
 
 
-def check_url(url, cache={}):
+def check_url(url, cache={}, allow_unreachable=False):
     if url in cache:
         return cache[url]
     req = urllib.request.Request(url, method="GET", headers={"User-Agent": "Mozilla/5.0 (claims-linter)"})
@@ -90,7 +96,11 @@ def check_url(url, cache={}):
             status = int(out.stdout.strip() or -1)
         except Exception:
             status = -1
-    if status == -1 or status in (404, 410):
+    if status < 100:
+        # curl prints "000" (-> 0) and urllib raises when no HTTP response comes back at all.
+        # Never "OK": it means we did not reach the source, not that the source is fine.
+        verdict = "WARN" if allow_unreachable else "UNREACHABLE"
+    elif status in (404, 410):
         verdict = "FAIL"
     elif status >= 400:
         verdict = "WARN"  # 403/405/429: bot-blocked but resolvable
@@ -102,6 +112,7 @@ def check_url(url, cache={}):
 
 def main():
     check_urls = "--no-url-check" not in sys.argv
+    allow_unreachable = "--allow-unreachable" in sys.argv
     failures, warns = [], []
     all_urls = set()
     for path in iter_md_files():
@@ -119,11 +130,15 @@ def main():
                     failures.append(f"{path.name}:{lineno}: [verified] tag without as-of date: {tag[:90]}")
     if check_urls:
         for url in sorted(all_urls):
-            verdict, status = check_url(url.rstrip(".;:"))
-            if verdict == "FAIL":
+            verdict, status = check_url(url.rstrip(".;:"), allow_unreachable=allow_unreachable)
+            if verdict == "UNREACHABLE":
+                failures.append(f"unreachable from this host (no HTTP status): {url}")
+            elif verdict == "FAIL":
                 failures.append(f"dead URL ({status}): {url}")
             elif verdict == "WARN":
-                warns.append(f"bot-blocked URL ({status}), verify manually: {url}")
+                label = ("unreachable from this host, NOT verified here"
+                         if status < 100 else f"bot-blocked URL ({status}), verify manually")
+                warns.append(f"{label}: {url}")
     for w in warns:
         print(f"WARN  {w}")
     for f in failures:
