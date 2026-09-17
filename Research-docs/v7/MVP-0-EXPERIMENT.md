@@ -29,6 +29,13 @@ The strongest zero-training multiview candidate has NO license file [registry N-
 
 The HF tag says `c-uda`, the site implies click-through research terms [registry N-14]. Resolve in writing before any 2a fine-tune ingests it — this is the datum that decides whether 2a's main course exists or the mix falls back to Panoptic+HUMBI+scans.
 
+## E-06 — Track4World one-pass prep probe (half a day, added 2026-09-17)
+
+Designed in [TRACK4WORLD-DENSE-3D-TRACKING.md](TRACK4WORLD-DENSE-3D-TRACKING.md) §5. One subject in a loose garment, one 2× GoPro take, each camera run separately through Track4World `3d_efep` in world mode with the DA3 backbone and `--metric_scale` [registry T-15]; MegaSaM + 2D-tracker prep on the same take is the control.
+- **Measures:** (1) VRAM peak and wall-clock at `--image_size 640` for 5 s / 15 s / 30 s clips at 60 fps [hypothesis | the only published memory point is 14 GB for 16 frames, registry T-9]; (2) inter-camera baseline recovered from metric scale vs the tape-measured rig; (3) held-out-camera reprojection error of tracked points on the garment; (4) the same 4D fitter initialised from Track4World tracks vs from the control prep — held-out PSNR and temporal-LPIPS spikes; (5) the time-shift that minimises two-camera trajectory disagreement vs the QR/LED sync residual of the same take.
+- **Gate:** if (4) is not worse and (1) fits the 96 GB card [registry C3-8] for a 30 s clip, Track4World becomes the NC-track default prep and §5.4's camera-free flicker score enters the acceptance protocol as a candidate; if it is worse, it stays a measurement tool only.
+- **License rail:** academic-only licence and CC-BY-NC-4.0 backbone → NC-track experiment; no output of E-06 is stored in any commercial pipeline directory [registry T-3, T-5].
+
 ## Reporting rule
 
 Each experiment ends with a one-page result note added to v7 (tagged claims, linter-clean) and a row update in DATASET-STATUS.md §1. No result note → the experiment did not happen — this page is the antidote to the repo's historical pattern of plans quietly becoming "facts".
