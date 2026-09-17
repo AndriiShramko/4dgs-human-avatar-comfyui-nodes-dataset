@@ -15,6 +15,7 @@
 | Inria diff-gaussian-rasterization + forks (STG thirdparty, 4DGaussians submodule, DualGS inherited parts, QUEEN) | non-commercial | ❌ research/reference only | [registry LB2-4, LB2-5, N-12] |
 | Apple SHARP | code: permissive custom; weights: research-only | ❌ weights; code irrelevant to this product | [registry LB2-2b, LB2-2c] |
 | Difix3D+ / ArtiFixer / World Tracing / Sapiens | NVIDIA License / NC checkpoints / CC BY-NC(-ND) | ❌ NC-track experiments only | [registry LB1-8b, N-13] |
+| Track4World (Tencent ARC + HKUST, ECCV 2026) | "academic purposes" only; weights covered; default DA3 backbone CC-BY-NC-4.0 | ❌ NC-track preprocessing and measurement only; measurement-only use is an open counsel question | [registry T-3, T-4, T-5] |
 | Academic 4D-human datasets (ActorsHQ, DNA-R, MVHumanNet, THuman, HuMMan, HuGe100K) | all non-commercial or gated | ❌ — and DNA-R/ActorsHQ are owner-banned outright | [registry LB2-12a..LB2-12f, N-3] |
 | VolHuMe (2026) | dataset license NOT PUBLISHED | ❓ treat as NC until authors answer | [registry LB2-6] |
 | $0-license synthetic stack (MakeHuman, Poly Haven, Rocketbox, CMU mocap) | CC0 / MIT / commercial-OK | ✅ | [registry N-9 \| spot-check each before first commercial use] |

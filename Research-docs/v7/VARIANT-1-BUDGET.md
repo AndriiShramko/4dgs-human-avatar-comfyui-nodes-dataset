@@ -18,6 +18,7 @@ Stability is the acceptance criterion, so replay-not-generative is a design deci
 |---|---|---|
 | Capture | 2× GoPro HERO 13, QR-timecode resync [registry N-5] | true genlock does not exist on GoPro [registry C1-3]; document residual sub-frame offset per take [estimate \| owner's gopro-genlock project measured σ 0.3-0.5 ms class offsets with QR+rolling-shutter methods] |
 | Camera poses | COLMAP (multicam) / MegaSaM (monocular; NC-track only) [registry N-11] | VGGT-1B-Commercial is the commercial monocular front-end candidate — license text must be read first [registry N-11] |
+| Motion scaffold for the 4D fit (dense 3D tracks) | default sub-path: Track4World one-pass poses + point maps + world-centric 3D trajectories of every pixel (academic-only licence) [registry T-3, T-15] | clean sub-path: none released; nearest assembly is VGGT-1B-Commercial + AllTracker (MIT) + own 2D→3D lifting [registry N-11, T-5] — see [TRACK4WORLD-DENSE-3D-TRACKING.md](TRACK4WORLD-DENSE-3D-TRACKING.md) §7 and experiment E-06 |
 | 4D fit | gsplat-based per-video optimization (Apache-2.0) [registry C4-7]; method refs: Instant4D / Shape-of-Motion / MoSca class [registry N-6 \| tool list inherited from 6.16] | STG/4DGaussians usable on the NC sub-path only — their rasterizer inherits Inria non-commercial [registry LB2-5, N-12] |
 | ComfyUI delivery | Wrapper nodes over the native `GAUSSIAN` type (core since v0.23.0) [registry LB2-8] | see §3 — the time axis is ours to design; niche is open [registry LB2-7] |
 | Web delivery | PLY-sequence → SOG/SPZ static frames [registry LB2-8] | no industry temporal format exists yet — an opportunity, not a blocker [registry LB2-7] |
@@ -55,6 +56,7 @@ The free RTX 6000 Pro (96 GB) carries the main compute [registry C3-8]. The sm_1
 |---|---|---|
 | 4D fit | any tool incl. STG/Inria-derived [registry LB2-5] | **gsplat-only stack** [registry C4-7, N-12] |
 | Monocular poses | MegaSaM [registry N-11] | VGGT-1B-Commercial after reading its license [registry N-11] |
+| Dense 3D motion prep | Track4World (after E-06 confirms it on our takes) [registry T-15] | VGGT-1B-Commercial + AllTracker lifting only; no Track4World output crosses the wall [registry T-3] |
 | Artifacts | free to publish as demos | only artifacts produced by the clean stack cross into commercial use — **the wall rule**: outputs of NC tools never migrate [registry N-12 \| same principle that catches 4C4D's MIT-over-NC-deps trap] |
 | Cost delta | baseline | +2–4 weeks porting effort [estimate \| replacing Inria-derived rasterizer calls with gsplat APIs] |
 
