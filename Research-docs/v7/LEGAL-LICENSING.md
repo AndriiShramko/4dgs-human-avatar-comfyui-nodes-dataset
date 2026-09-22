@@ -32,7 +32,7 @@
 
 Local custom nodes import ComfyUI (GPL-3.0 [registry LB2-14]), making them derivative works: **closed-source paid local nodes are not viable**; a paid node marketplace was not found as of 2026-07 [registry LB2-14]. Weights, datasets and remote APIs are NOT code derivatives — GPL does not reach them. Therefore:
 
-- Nodes = GPL-3.0, free, the distribution funnel (and the niche is currently empty [registry LB2-7]).
+- Nodes = GPL-3.0, free, the distribution funnel (the niche looked empty on 2026-07-27 [registry LB2-7]; since 2026-09 ComfyUI-SplatKit ships a generative video→4D-splat workflow, so our differentiator is faithful replay, not being first [registry K-10]).
 - Monetization = dataset licensing, model weights, hosted API. Heavy proprietary logic can live behind a remote API outside GPL scope.
 - Node package stays a ~100-line adapter over a standalone library (our license) → survives ComfyUI churn and enables CLI/Blender re-targeting.
 

@@ -19,7 +19,7 @@ Stability is the acceptance criterion, so replay-not-generative is a design deci
 | Capture | 2× GoPro HERO 13, QR-timecode resync [registry N-5] | true genlock does not exist on GoPro [registry C1-3]; document residual sub-frame offset per take [estimate \| owner's gopro-genlock project measured σ 0.3-0.5 ms class offsets with QR+rolling-shutter methods] |
 | Camera poses | COLMAP (multicam) / MegaSaM (monocular; NC-track only) [registry N-11] | VGGT-1B-Commercial is the commercial monocular front-end candidate — license text must be read first [registry N-11] |
 | 4D fit | gsplat-based per-video optimization (Apache-2.0) [registry C4-7]; method refs: Instant4D / Shape-of-Motion / MoSca class [registry N-6 \| tool list inherited from 6.16] | STG/4DGaussians usable on the NC sub-path only — their rasterizer inherits Inria non-commercial [registry LB2-5, N-12] |
-| ComfyUI delivery | Wrapper nodes over the native `GAUSSIAN` type (core since v0.23.0) [registry LB2-8] | see §3 — the time axis is ours to design; niche is open [registry LB2-7] |
+| ComfyUI delivery | Wrapper nodes over the native `GAUSSIAN` type (core since v0.23.0) [registry LB2-8] | see §3 — the time axis is ours to design; niche was open on 2026-07-27, a generative competitor exists since 2026-09 [registry K-10]; [registry LB2-7] |
 | Web delivery | PLY-sequence → SOG/SPZ static frames [registry LB2-8] | no industry temporal format exists yet — an opportunity, not a blocker [registry LB2-7] |
 
 ## 3. Time over a static GAUSSIAN type — the load-bearing design question
