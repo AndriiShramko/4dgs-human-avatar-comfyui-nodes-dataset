@@ -29,6 +29,19 @@ The strongest zero-training multiview candidate has NO license file [registry N-
 
 The HF tag says `c-uda`, the site implies click-through research terms [registry N-14]. Resolve in writing before any 2a fine-tune ingests it — this is the datum that decides whether 2a's main course exists or the mix falls back to Panoptic+HUMBI+scans.
 
+## E-06 — Affine-rectified depth prior probe (funds/kills the geometry-prior idea; needs the E-01 capture)
+
+Assessment: [AFFINEGS-GEOMETRY-PRIOR.md](AFFINEGS-GEOMETRY-PRIOR.md). The AffineGS supervision is **ported as a loss** into the gsplat-based per-video fit of E-01 — the upstream repository is never run as a pipeline stage [registry H-4, H-7].
+- **Setup:** one E-01 take, three static frames (subject holding still), E-01's camera split (fit on one camera plus turntable, evaluate on the other) — no extra hardware. Three seeds per arm [hypothesis | enough to see the ±0.3 dB band of VARIANT-1 §5.4].
+- **Arms:** (0) no depth prior; (1) one global scale-and-shift alignment; (2) spatially varying affine rectification (the three terms).
+- **Priors:** Depth-Anything-V2-Large as an NC-track diagnostic only — it measures the ceiling [registry H-8]; Depth-Anything-V2-Small and MoGe-2 as the clean candidates [registry H-9]. The large-versus-clean gap is the price of commercial cleanliness.
+- **Init ablation:** SfM-cloud start versus a denser multi-view start, because two cameras give exactly the sparse cloud the paper says breaks competing methods [registry H-14].
+- **Measures:** held-out PSNR and LPIPS, visible floaters, and the number of per-take hand retunes an arm needs (guided-filter radius and epsilon, loss weights) [registry H-18].
+- **Gate (keep):** arm 2 beats arm 1 by more than 0.3 dB held-out PSNR on at least two of the three frames, with no hand retune, using a clean prior → integrate into Variant 1's clean sub-path [hypothesis | threshold borrowed from VARIANT-1 §5.4; re-set after the first run]. Otherwise drop the idea and say so in the result note.
+- **Temporal probe (half a day):** a short consecutive run of frames, per-image prior versus Video-Depth-Anything-Small [registry H-9]; frame-to-frame LPIPS spikes as defined in VARIANT-1 §5.3. A prior that flickers rules arm 2 out of any 4D use, whatever its static score.
+- **Port check first:** reproduce one MuSHRoom scene with the ported loss against the authors' published numbers (hours on a 3090-class GPU [registry H-16]) before trusting any own-capture result; the no-prior arm is the negative control and must NOT reproduce them.
+- **Cost:** hours on the free RTX 6000 Pro, or a few cloud hours if sm_120 blocks the port [estimate | registry C3-8, H-7].
+
 ## Reporting rule
 
 Each experiment ends with a one-page result note added to v7 (tagged claims, linter-clean) and a row update in DATASET-STATUS.md §1. No result note → the experiment did not happen — this page is the antidote to the repo's historical pattern of plans quietly becoming "facts".
