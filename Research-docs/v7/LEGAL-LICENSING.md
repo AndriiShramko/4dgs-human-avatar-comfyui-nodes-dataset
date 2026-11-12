@@ -14,6 +14,7 @@
 | SMPL-X model | research-only; commercial via Meshcapade | ❌ out of commercial builds | [registry LB2-1, C4-3] |
 | Inria diff-gaussian-rasterization + forks (STG thirdparty, 4DGaussians submodule, DualGS inherited parts, QUEEN) | non-commercial | ❌ research/reference only | [registry LB2-4, LB2-5, N-12] |
 | Apple SHARP | code: permissive custom; weights: research-only | ❌ weights; code irrelevant to this product | [registry LB2-2b, LB2-2c] |
+| Depth-Anything-V2 Base/Large/Giant weights (AffineGS default prior); Solv3R and Déjà View weights — all with Apache-2.0 code around them | CC-BY-NC-4.0 / NVIDIA License (research or evaluation only) | ❌ NC-track diagnostics only; permissive priors listed in AFFINEGS-GEOMETRY-PRIOR §4 | [registry H-8, H-9, I-6, I-7, I-8] |
 | Difix3D+ / ArtiFixer / World Tracing / Sapiens | NVIDIA License / NC checkpoints / CC BY-NC(-ND) | ❌ NC-track experiments only | [registry LB1-8b, N-13] |
 | Academic 4D-human datasets (ActorsHQ, DNA-R, MVHumanNet, THuman, HuMMan, HuGe100K) | all non-commercial or gated | ❌ — and DNA-R/ActorsHQ are owner-banned outright | [registry LB2-12a..LB2-12f, N-3] |
 | VolHuMe (2026) | dataset license NOT PUBLISHED | ❓ treat as NC until authors answer | [registry LB2-6] |
